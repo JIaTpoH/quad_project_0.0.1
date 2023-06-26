@@ -1,3 +1,3 @@
-import const Routes = {
-  Home: 
+export const routes = {
+  Home: './'
 }
