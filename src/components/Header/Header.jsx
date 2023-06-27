@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import styles from "../../styles/Header.module.css";
 
@@ -19,7 +19,7 @@ const Header = () => {
       <div className={styles.info}>
         <div className={styles.user}>
           <div
-            className={styles.avatar}
+            className={styles.Avatar}
             style={{ backgroundImage: `ùrl(${Avatar})` }}
           />
           <div className={styles.username}>Guest</div>
@@ -40,7 +40,7 @@ const Header = () => {
               value=""
             />
           </div>
-          <div className={styles.box}></div>
+          {false && <div className={styles.box}></div>}
         </form>
         <div className={styles.account}>
         <Link to={routes.Home} className={styles.favourites}>
