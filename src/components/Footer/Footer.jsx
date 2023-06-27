@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import Logo from "../../images/QUAD_BIG.svg";
 import { routes } from "../../utils/routes";
 import styles from "../../styles/Footer.module.css";
-import { Link } from "react-router-dom";
+import Logo from "../../images/QUAD_BIG.svg";
 
 const Footer = () => (
   <section className={styles.footer}>
