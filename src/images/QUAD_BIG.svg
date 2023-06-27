@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
+  <style>
+    .text {
+      font-family: 'Arial', sans-serif;
+      font-size: 48px;
+      fill: #FFF;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      animation: neon-glow 2s linear infinite;
+    }
+
+    @keyframes neon-glow {
+      0% {
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #FFF, 0 0 60px #FF7F00;
+      }
+      100% {
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #FFF, 0 0 60px #FF7F00, 0 0 70px #FF7F00, 0 0 80px #FF7F00;
+      }
+    }
+  </style>
+  <rect width="100%" height="100%" fill="transparent" />
+  <text class="text" x="50%" y="50%">Quad</text>
+</svg>
