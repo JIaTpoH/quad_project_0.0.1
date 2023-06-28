@@ -5,12 +5,12 @@ import styles from "../../styles/Sidebar.module.css";
 
 const Sidebar = () => {
   return (
-    <div className={styles.sidebar}>
+    <section className={styles.sidebar}>
       <div className={styles.title}>Categories</div>
       <nav>
         <ul className={styles.menu}>
           <li>
-            <NavLink>Link</NavLink>
+            <NavLink to={`/categories/${1}`}>Link</NavLink>
           </li>
         </ul>
       </nav>
@@ -27,7 +27,7 @@ const Sidebar = () => {
           Terms & Conditions
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
