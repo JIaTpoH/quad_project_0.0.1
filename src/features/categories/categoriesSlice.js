@@ -1,21 +1,21 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 
+import axios from "axios";
+import { Base_URL } from "../../utils/constans";
+
+
 export const getCategories = createAsyncThunk('categories/getCategories',
-  async(  thunkAPI) => {
-  try {
-    const res = await axios(`${Base_URL}/categories`);
-    return res.data;
+async (_, thunkAPI) => {
+    try {
+      const res = await axios(`${Base_URL}/categories`);
+      return res.data;
 
-  } catch (err) {
-    console.log(err);
-    return thunkAPI.rejectWithValue(err);
+    } catch (err) {
+      console.log(err);
+      return thunkAPI.rejectWithValue(err);
+    }
   }
-}
 );
-
-const initialState = {
-  list: [],
-}
 
 const categoriesSlice = createSlice({
   name: 'categories',
@@ -25,19 +25,16 @@ const categoriesSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getCategories.pending, (state) => {
-      state.list = action.payload;
       state.isLoading = true;
     });
     builder.addCase(getCategories.fulfilled, (state, { payload }) => {
-      state.list = action.payload;
+      state.list = payload;
       state.isLoading = false;
     });
     builder.addCase(getCategories.rejected, (state) => {
-      state.list = action.payload;
       state.isLoading = false;
     });
-    
-  }
+  },
 });
 
 export default categoriesSlice.reducer;
