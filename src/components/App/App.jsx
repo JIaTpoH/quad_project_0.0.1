@@ -8,12 +8,14 @@ import Sidebar from "../Sidebar/Sidebar";
 
 import { getCategories } from "../../features/categories/categoriesSlice";
 import video from "../../images/quad_video.mp4"
+import { getProducts } from "../../features/products/productsSlice";
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCategories());
+    dispatch(getProducts());
   
   }, [dispatch]);
 
