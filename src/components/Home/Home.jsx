@@ -3,8 +3,8 @@ import Poster from "../Poster/Poster";
 
 const Home = () => {
   return (
-    <>
-      <Poster />
+     <>
+       <Poster />
     </>
   );
 };

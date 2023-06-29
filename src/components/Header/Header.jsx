@@ -8,6 +8,8 @@ import { routes } from "../../utils/routes";
 import Logo from "../../images/QUAD_BIG.svg";
 import Avatar from "../../images/StelsYelow.jpg";
 
+
+
 const Header = () => {
   return (
     <div className={styles.header}>
@@ -20,7 +22,7 @@ const Header = () => {
         <div className={styles.user}>
           <div
             className={styles.Avatar}
-            style={{ backgroundImage: `ùrl(${Avatar})` }}
+            style={{ backgroundImage: `url(${Avatar})` }}
           />
           <div className={styles.username}>Guest</div>
         </div>

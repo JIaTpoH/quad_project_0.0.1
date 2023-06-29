@@ -1,5 +1,5 @@
 export const routes = {
-  Home: './',
-  Cart: "./cart",
+  Home: '/',
+  Cart: "/cart",
   Category: "/categories/:id",
 };

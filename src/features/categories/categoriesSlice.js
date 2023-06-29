@@ -4,12 +4,12 @@ import axios from "axios";
 import { Base_URL } from "../../utils/constans";
 
 
-export const getCategories = createAsyncThunk('categories/getCategories',
-async (_, thunkAPI) => {
+export const getCategories = createAsyncThunk(
+  "categories/getCategories",
+  async (_, thunkAPI) => {
     try {
       const res = await axios(`${Base_URL}/categories`);
       return res.data;
-
     } catch (err) {
       console.log(err);
       return thunkAPI.rejectWithValue(err);
@@ -18,10 +18,10 @@ async (_, thunkAPI) => {
 );
 
 const categoriesSlice = createSlice({
-  name: 'categories',
+  name: "categories",
   initialState: {
     list: [],
-    isLoading: false
+    isLoading: false,
   },
   extraReducers: (builder) => {
     builder.addCase(getCategories.pending, (state) => {

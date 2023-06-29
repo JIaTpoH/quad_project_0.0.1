@@ -77,7 +77,7 @@
   height: 170px;
   left: -25px;
   bottom: 74px;
-  background: url(../images/CFORCE.png) no-repeat center/contain;
+  background: url(../images/BigQuad.jpg) no-repeat center/contain;
 }
 
 .left:after {
@@ -85,7 +85,7 @@
   height: 151px;
   right: -25px;
   bottom: -25px;
-  background: url(../images/BigQuad.jpg) no-repeat center/contain;
+  background: url(../images/CFORCE.png) no-repeat center/contain;
 }
 
 .content {
