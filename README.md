@@ -1,1 +1,0 @@
-# quad_project_0.0.1
