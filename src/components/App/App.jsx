@@ -9,7 +9,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import { getCategories } from "../../features/categories/categoriesSlice";
 import video from "../../images/quad_video.mp4"
 import { getProducts } from "../../features/products/productsSlice";
-
+import UserForm from "../user/UserForm"
 const App = () => {
   const dispatch = useDispatch();
 
@@ -24,6 +24,7 @@ const App = () => {
 
     <div className="app">
       <Header />
+      <UserForm />
       <div className="main">
       <video src={video} autoPlay loop muted />
       <main/>

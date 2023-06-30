@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { routes } from "../../utils/routes";
+import { ROUTES } from "../../utils/routes";
 import styles from "../../styles/Footer.module.css";
 import Logo from "../../images/QUAD_BIG.svg";
 
 const Footer = () => (
   <section className={styles.footer}>
     <div className={styles.logo}>
-      <Link to={routes.Home}>
+      <Link to={ROUTES.HOME}>
         <img src={Logo} alt="Quad" />
       </Link>
     </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-import { ROUTES, routes } from "../../utils/routes";
+import { ROUTES } from "../../utils/routes";
 
 import styles from "../../styles/Product.module.css";
 
@@ -86,7 +86,7 @@ const Product = (item) => {
         <div className={styles.bottom}>
           <div className={styles.purchase}>19 people purchased</div>
 
-          <Link to={routes.Home}>Return to store</Link>
+          <Link to={ROUTES.HOME}>Return to store</Link>
         </div>
       </div>
     </section>
