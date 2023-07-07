@@ -1,11 +1,11 @@
 import React from 'react'
-
-function VideoBackground() {
+import video from "../../images/quad_video.mp4"
+const Main = () => {
   return (
-    <div class="fullscreen-video">
-  <video src="src/images/quad_video.mp4" autoplay loop muted></video>
-</div>
+    <div className='main'>
+      <video src={video} />
+    </div>
   )
 }
 
-export default VideoBackground
+export default Main
